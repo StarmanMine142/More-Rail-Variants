@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_rail_raised_sw",
+  "textures": {
+    "rail": "quad-mstv-mrailv:block/crimson_activator_rail_on"
+  }
+}

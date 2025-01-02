@@ -1,0 +1,36 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:not",
+      "value": {
+        "condition": "fabric:all_mods_loaded",
+        "values": [
+          "quad-mstv-mtv"
+        ]
+      }
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "activator_rail",
+  "key": {
+    "#": {
+      "tag": "quad-mstv-mrailv:rail_redstone_torches"
+    },
+    "S": {
+      "item": "mstv-base:crimson_stick"
+    },
+    "X": {
+      "tag": "c:ingots/iron"
+    }
+  },
+  "pattern": [
+    "XSX",
+    "X#X",
+    "XSX"
+  ],
+  "result": {
+    "count": 6,
+    "id": "quad-mstv-mrailv:crimson_activator_rail"
+  }
+}

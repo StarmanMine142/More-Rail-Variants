@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "${mod_id}",
+  "version": "${mod_version}",
+  "name": "${mod_name}",
+  "description": "${mod_description}",
+  "authors": [
+    "pnku"
+  ],
+  "contact": {
+    "homepage": "https://pnku.de",
+    "email": "contact@pnku.de",
+    "sources": "https://github.com/pnk2u/More-Rail-Variants",
+    "issues": "https://github.com/pnk2u/More-Rail-Variants/issues"
+  },
+  "license": "${mod_license}",
+  "icon": "icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "de.pnku.mstv_mrailv.MoreRailVariants"
+    ],
+    "client": [
+      "de.pnku.mstv_mrailv.MoreRailVariantsClient"
+    ],
+    "fabric-datagen": [
+      "de.pnku.mstv_mrailv.MoreRailVariantDatagen"
+    ]
+  },
+  "mixins": [
+    "mstv-mrailv.mixins.json"
+  ],
+  "depends": {
+		"fabricloader": ">=${loader_version}",
+		"minecraft": ">=${minecraft_version}",
+		"java": ">=21",
+		"fabric-api": "*",
+        "mstv-base": ">=${mstv_version}"
+	},
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.discord": "https://discord.com/invite/sA42pp6cuX"
+      }
+    }
+  }
+}

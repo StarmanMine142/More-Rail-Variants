@@ -1,0 +1,8 @@
+{
+  "values": [
+    "#quad-mstv-mrailv:simple_rail_variants",
+    "#quad-mstv-mrailv:activator_rail_variants",
+    "#quad-mstv-mrailv:detector_rail_variants",
+    "#quad-mstv-mrailv:powered_rail_variants"
+  ]
+}

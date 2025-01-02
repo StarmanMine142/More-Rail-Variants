@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "rail",
+  "key": {
+    "S": {
+      "item": "mstv-base:dark_oak_stick"
+    },
+    "X": {
+      "tag": "c:ingots/iron"
+    }
+  },
+  "pattern": [
+    "X X",
+    "XSX",
+    "X X"
+  ],
+  "result": {
+    "count": 16,
+    "id": "quad-mstv-mrailv:dark_oak_rail"
+  }
+}

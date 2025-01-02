@@ -1,0 +1,6 @@
+*.bbmodel
+.gradle/
+.idea/
+build/
+res/
+run/

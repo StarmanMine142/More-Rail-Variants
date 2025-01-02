@@ -1,0 +1,33 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "quad-mstv-mtv"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "activator_rail",
+  "key": {
+    "#": {
+      "item": "quad-mstv-mtv:warped_redstone_torch"
+    },
+    "S": {
+      "item": "mstv-base:warped_stick"
+    },
+    "X": {
+      "tag": "c:ingots/iron"
+    }
+  },
+  "pattern": [
+    "XSX",
+    "X#X",
+    "XSX"
+  ],
+  "result": {
+    "count": 6,
+    "id": "quad-mstv-mrailv:warped_activator_rail"
+  }
+}

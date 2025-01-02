@@ -1,0 +1,9 @@
+{
+  "values": [
+    {
+      "id": "#quad-mstv-mtv:redstone_torches",
+      "required": false
+    },
+    "minecraft:redstone_torch"
+  ]
+}

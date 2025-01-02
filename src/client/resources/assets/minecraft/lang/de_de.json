@@ -1,0 +1,6 @@
+{
+  "block.minecraft.activator_rail": "Eichenholzaktivierungsschiene",
+  "block.minecraft.detector_rail": "Eichenholzsensorschiene",
+  "block.minecraft.powered_rail": "Eichenholzantriebsschiene",
+  "block.minecraft.rail": "Eichenholzschiene"
+}

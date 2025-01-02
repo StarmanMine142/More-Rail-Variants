@@ -1,0 +1,67 @@
+{
+  "values": [
+    {
+      "structures": "#quad:is/spruce",
+      "block_replacement": {
+        "targets": "minecraft:rail",
+        "replacement": "quad-mstv-mrailv:spruce_rail"
+      }
+    },
+    {
+      "structures": "#quad:is/dark_oak",
+      "block_replacement": {
+        "targets": "minecraft:rail",
+        "replacement": "quad-mstv-mrailv:dark_oak_rail"
+      }
+    },
+    {
+      "structures": "#quad:is/jungle",
+      "block_replacement": {
+        "targets": "minecraft:rail",
+        "replacement": "quad-mstv-mrailv:jungle_rail"
+      }
+    },
+    {
+      "structures": "#quad:is/acacia",
+      "block_replacement": {
+        "targets": "minecraft:rail",
+        "replacement": "quad-mstv-mrailv:acacia_rail"
+      }
+    },
+    {
+      "structures": "#quad:is/mangrove",
+      "block_replacement": {
+        "targets": "minecraft:rail",
+        "replacement": "quad-mstv-mrailv:mangrove_rail"
+      }
+    },
+    {
+      "structures": "#quad:is/cherry",
+      "block_replacement": {
+        "targets": "minecraft:rail",
+        "replacement": "quad-mstv-mrailv:cherry_rail"
+      }
+    },
+    {
+      "structures": "#quad:is/bamboo",
+      "block_replacement": {
+        "targets": "minecraft:rail",
+        "replacement": "quad-mstv-mrailv:bamboo_rail"
+      }
+    },
+    {
+      "structures": "#quad:is/crimson",
+      "block_replacement": {
+        "targets": "minecraft:rail",
+        "replacement": "quad-mstv-mrailv:crimson_rail"
+      }
+    },
+    {
+      "structures": "#quad:is/warped",
+      "block_replacement": {
+        "targets": "minecraft:rail",
+        "replacement": "quad-mstv-mrailv:warped_rail"
+      }
+    }
+  ]
+}
