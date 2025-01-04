@@ -35,7 +35,11 @@ loom {
 }
 
 fabricApi {
-	configureDataGeneration()
+	configureDataGeneration(){
+		setModId("quad-mstv-mrailv")
+		createSourceSet=true
+		client=true
+	}
 }
 
 dependencies {
@@ -48,7 +52,10 @@ dependencies {
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fapi_version}"
 
-	// MStV + mTorchV (modImplementation datagen only -> modCompileOnly for release)
+	// MStV + mTorchV
+	modDatagenImplementation "curse.maven:more-stick-variants-1096913:${project.mstv_version_id}"
+	modDatagenImplementation "curse.maven:more-torch-variants-1099365:${project.mtorchv_version_id}"
+
 	modCompileOnly "curse.maven:more-stick-variants-1096913:${project.mstv_version_id}"
 	modCompileOnly "curse.maven:more-torch-variants-1099365:${project.mtorchv_version_id}"
 }
