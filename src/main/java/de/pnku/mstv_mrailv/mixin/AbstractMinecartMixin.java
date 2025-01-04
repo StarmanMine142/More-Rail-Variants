@@ -12,7 +12,7 @@ import static de.pnku.mstv_mrailv.init.MrailvTags.ALL_POWERED_RAIL;
 @Mixin(AbstractMinecart.class)
 public abstract class AbstractMinecartMixin {
 
-    @Redirect(method = "moveAlongTrack", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/level/block/state/BlockState;is(Lnet/minecraft/world/level/block/Block;)Z", ordinal = 0))
+    @Redirect(method = "getRedstoneDirection", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/level/block/state/BlockState;is(Lnet/minecraft/world/level/block/Block;)Z", ordinal = 0))
     protected boolean redirectedMoveAlongTrack(BlockState blockState, Block block) {
         return blockState.is(ALL_POWERED_RAIL);
     }

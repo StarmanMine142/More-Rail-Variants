@@ -3,12 +3,8 @@
   "category": "misc",
   "group": "rail",
   "key": {
-    "S": {
-      "item": "mstv-base:mangrove_stick"
-    },
-    "X": {
-      "tag": "c:ingots/iron"
-    }
+    "S": "mstv-base:mangrove_stick",
+    "X": "mstv-base:mangrove_stick"
   },
   "pattern": [
     "X X",

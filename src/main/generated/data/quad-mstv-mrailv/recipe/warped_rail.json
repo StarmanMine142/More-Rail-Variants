@@ -3,12 +3,8 @@
   "category": "misc",
   "group": "rail",
   "key": {
-    "S": {
-      "item": "mstv-base:warped_stick"
-    },
-    "X": {
-      "tag": "c:ingots/iron"
-    }
+    "S": "mstv-base:warped_stick",
+    "X": "mstv-base:warped_stick"
   },
   "pattern": [
     "X X",

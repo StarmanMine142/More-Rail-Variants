@@ -1,6 +1,5 @@
 package de.pnku.mstv_mrailv;
 
-import de.pnku.mstv_mrailv.datagen.MoreRailVariantLangGenerator;
 import de.pnku.mstv_mrailv.datagen.MoreRailVariantLootTableGenerator;
 import de.pnku.mstv_mrailv.datagen.MoreRailVariantRecipeGenerator;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;

@@ -3,8 +3,8 @@
   "category": "misc",
   "group": "rail",
   "key": {
-    "S": "minecraft:bamboo",
-    "X": "minecraft:bamboo"
+    "S": "mstv-base:pale_oak_stick",
+    "X": "mstv-base:pale_oak_stick"
   },
   "pattern": [
     "X X",
@@ -13,6 +13,6 @@
   ],
   "result": {
     "count": 16,
-    "id": "quad-mstv-mrailv:bamboo_rail"
+    "id": "quad-mstv-mrailv:pale_oak_rail"
   }
 }

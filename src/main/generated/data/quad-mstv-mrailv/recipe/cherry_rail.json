@@ -3,12 +3,8 @@
   "category": "misc",
   "group": "rail",
   "key": {
-    "S": {
-      "item": "mstv-base:cherry_stick"
-    },
-    "X": {
-      "tag": "c:ingots/iron"
-    }
+    "S": "mstv-base:cherry_stick",
+    "X": "mstv-base:cherry_stick"
   },
   "pattern": [
     "X X",

@@ -3,12 +3,8 @@
   "category": "misc",
   "group": "rail",
   "key": {
-    "S": {
-      "item": "mstv-base:dark_oak_stick"
-    },
-    "X": {
-      "tag": "c:ingots/iron"
-    }
+    "S": "mstv-base:dark_oak_stick",
+    "X": "mstv-base:dark_oak_stick"
   },
   "pattern": [
     "X X",

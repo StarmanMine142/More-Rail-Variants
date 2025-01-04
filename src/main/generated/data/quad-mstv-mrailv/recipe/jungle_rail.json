@@ -3,12 +3,8 @@
   "category": "misc",
   "group": "rail",
   "key": {
-    "S": {
-      "item": "mstv-base:jungle_stick"
-    },
-    "X": {
-      "tag": "c:ingots/iron"
-    }
+    "S": "mstv-base:jungle_stick",
+    "X": "mstv-base:jungle_stick"
   },
   "pattern": [
     "X X",

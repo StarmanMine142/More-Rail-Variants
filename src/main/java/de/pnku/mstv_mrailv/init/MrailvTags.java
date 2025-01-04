@@ -10,4 +10,5 @@ public class MrailvTags {
         public static final TagKey<Block> ALL_POWERED_RAIL = TagKey.create(Registries.BLOCK, MoreRailVariants.asId("all_powered_rail"));
         public static final TagKey<Block> POWERED_RAIL_VARIANTS = TagKey.create(Registries.BLOCK, MoreRailVariants.asId("powered_rail_variants"));
         public static final TagKey<Item> RAIL_REDSTONE_TORCHES = TagKey.create(Registries.ITEM, MoreRailVariants.asId("rail_redstone_torches"));
+        public static final TagKey<Item> SIMPLE_RAIL_VARIANTS = TagKey.create(Registries.ITEM, MoreRailVariants.asId("simple_rail_variants"));
 }
