@@ -1,16 +1,12 @@
 package de.pnku.mstv_mrailv.datagen;
 
 import de.pnku.mstv_base.item.MoreStickVariantItem;
-import de.pnku.mstv_mrailv.MoreRailVariants;
-import de.pnku.mstv_mrailv.init.MrailvBlockInit;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
-import net.fabricmc.fabric.api.resource.conditions.v1.ResourceConditions;
-import net.fabricmc.fabric.api.tag.convention.v2.ConventionalItemTags;
-import net.minecraft.core.HolderLookup;
+import net.fabricmc.fabric.api.resource.conditions.v1.DefaultResourceConditions;
+import net.minecraft.data.recipes.FinishedRecipe;
 import net.minecraft.data.recipes.RecipeBuilder;
 import net.minecraft.data.recipes.RecipeCategory;
-import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.ShapedRecipeBuilder;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
@@ -21,16 +17,17 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.concurrent.CompletableFuture;
+import java.util.function.Consumer;
+
 import static de.pnku.mstv_mrailv.init.MrailvBlockInit.*;
-import static de.pnku.mstv_mrailv.init.MrailvTags.RAIL_REDSTONE_TORCHES;
+import static de.pnku.mstv_mrailv.init.MrailvTags.*;
 import static de.pnku.mstv_mtv.init.MtvBlockInit.more_torch_blocks;
-import static net.fabricmc.fabric.api.resource.conditions.v1.ResourceConditions.allModsLoaded;
+import static net.fabricmc.fabric.api.resource.conditions.v1.DefaultResourceConditions.allModsLoaded;
 import static org.apache.commons.lang3.math.IEEE754rUtils.min;
 
 public class MoreRailVariantRecipeGenerator extends FabricRecipeProvider {
-    public MoreRailVariantRecipeGenerator(FabricDataOutput output, CompletableFuture<HolderLookup.Provider> registriesFuture) {
-        super(output, registriesFuture);
+    public MoreRailVariantRecipeGenerator(FabricDataOutput output) {
+        super(output);
     }
 
     public static final List<Item> more_redstone_torches = new ArrayList<>();
@@ -54,7 +51,7 @@ public class MoreRailVariantRecipeGenerator extends FabricRecipeProvider {
 
 
     @Override
-    public void buildRecipes(RecipeOutput recipeOutput) {
+    public void buildRecipes(Consumer<FinishedRecipe> recipeOutput) {
         Map<Item, Item> more_redstone_rail_torch_items = more_redstone_rail_torches();
         for (Item railItem : more_rail_items) {
             String woodType = more_rail_wood_types.get(railItem);
@@ -65,33 +62,33 @@ public class MoreRailVariantRecipeGenerator extends FabricRecipeProvider {
                 ShapedRecipeBuilder.shaped(RecipeCategory.TRANSPORTATION, railItem, 6)
                         .define('#', RAIL_REDSTONE_TORCHES)
                         .define('S', stickVariant)
-                        .define('X', ConventionalItemTags.IRON_INGOTS)
+                        .define('X', C_INGOTS_IRON)
                         .pattern("XSX")
                         .pattern("X#X")
                         .pattern("XSX")
                         .group("activator_rail")
                         .unlockedBy("has_rail", has(baseRailItemA))
-                        .save(withConditions(recipeOutput, ResourceConditions.not(allModsLoaded("quad-mstv-mtv"))));
+                        .save(withConditions(recipeOutput, DefaultResourceConditions.not(allModsLoaded("quad-mstv-mtv"))));
 
                 LOGGER.info(railItem + " -> Map: " + more_redstone_rail_torch_items.get(railItem));
 
                 ShapedRecipeBuilder.shaped(RecipeCategory.TRANSPORTATION, railItem, 6)
                         .define('#', more_redstone_rail_torch_items.get(railItem))
                         .define('S', stickVariant)
-                        .define('X', ConventionalItemTags.IRON_INGOTS)
+                        .define('X', C_INGOTS_IRON)
                         .pattern("XSX")
                         .pattern("X#X")
                         .pattern("XSX")
                         .group("activator_rail")
                         .unlockedBy("has_rail", has(baseRailItemA))
-                        .save(withConditions(recipeOutput, ResourceConditions.allModsLoaded("quad-mstv-mtv")), RecipeBuilder.getDefaultRecipeId(railItem).withSuffix("_from_mstv_torch_variants"));
+                        .save(withConditions(recipeOutput, DefaultResourceConditions.allModsLoaded("quad-mstv-mtv")), RecipeBuilder.getDefaultRecipeId(railItem).withSuffix("_from_mstv_torch_variants"));
             } else if (more_detector_rail_items.contains(railItem)) {
                 Item baseRailItemD = more_simple_rail_items.get(more_detector_rail_items.indexOf(railItem));
                 ShapedRecipeBuilder.shaped(RecipeCategory.TRANSPORTATION, railItem, 6)
                         .define('R', Items.REDSTONE)
                         .define('S', stickVariant)
                         .define('#', Blocks.STONE_PRESSURE_PLATE)
-                        .define('X', ConventionalItemTags.IRON_INGOTS)
+                        .define('X', C_INGOTS_IRON)
                         .pattern("XSX")
                         .pattern("X#X")
                         .pattern("XRX")
@@ -103,7 +100,7 @@ public class MoreRailVariantRecipeGenerator extends FabricRecipeProvider {
                 ShapedRecipeBuilder.shaped(RecipeCategory.TRANSPORTATION, railItem, 6)
                         .define('R', Items.REDSTONE)
                         .define('S', stickVariant)
-                        .define('X', ConventionalItemTags.GOLD_INGOTS)
+                        .define('X', C_INGOTS_GOLD)
                         .pattern("X X")
                         .pattern("XSX")
                         .pattern("XRX")
@@ -113,7 +110,7 @@ public class MoreRailVariantRecipeGenerator extends FabricRecipeProvider {
             } if (more_simple_rail_items.contains(railItem)) {
                 ShapedRecipeBuilder.shaped(RecipeCategory.TRANSPORTATION, railItem, 16)
                         .define('S', stickVariant)
-                        .define('X', ConventionalItemTags.IRON_INGOTS)
+                        .define('X', C_INGOTS_IRON)
                         .pattern("X X")
                         .pattern("XSX")
                         .pattern("X X")

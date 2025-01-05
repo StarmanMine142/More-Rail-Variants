@@ -12,12 +12,12 @@ import java.util.concurrent.CompletableFuture;
 import static de.pnku.mstv_mrailv.init.MrailvBlockInit.*;
 
 public class MoreRailVariantLangGenerator extends FabricLanguageProvider {
-    public MoreRailVariantLangGenerator(FabricDataOutput dataOutput, CompletableFuture<HolderLookup.Provider> registryLookup) {
-        super(dataOutput, registryLookup);
+    public MoreRailVariantLangGenerator(FabricDataOutput dataOutput) {
+        super(dataOutput);
     }
 
     @Override
-    public void generateTranslations(HolderLookup.Provider provider, TranslationBuilder translationBuilder) {
+    public void generateTranslations(TranslationBuilder translationBuilder) {
         for (Block railBlock : more_rail_blocks) {
             String railPath = more_rail_names.get(railBlock);
             String railName = WordUtils.capitalizeFully(railPath.replace("_", " "));

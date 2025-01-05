@@ -1,0 +1,34 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "quad-mstv-mtv"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "activator_rail",
+  "key": {
+    "#": {
+      "item": "quad-mstv-mtv:cherry_redstone_torch"
+    },
+    "S": {
+      "item": "mstv-base:cherry_stick"
+    },
+    "X": {
+      "tag": "c:ingots/iron"
+    }
+  },
+  "pattern": [
+    "XSX",
+    "X#X",
+    "XSX"
+  ],
+  "result": {
+    "count": 6,
+    "item": "quad-mstv-mrailv:cherry_activator_rail"
+  },
+  "show_notification": true
+}

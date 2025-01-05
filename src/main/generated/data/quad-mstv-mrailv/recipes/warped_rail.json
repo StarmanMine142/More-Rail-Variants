@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "rail",
+  "key": {
+    "S": {
+      "item": "mstv-base:warped_stick"
+    },
+    "X": {
+      "tag": "c:ingots/iron"
+    }
+  },
+  "pattern": [
+    "X X",
+    "XSX",
+    "X X"
+  ],
+  "result": {
+    "count": 16,
+    "item": "quad-mstv-mrailv:warped_rail"
+  },
+  "show_notification": true
+}

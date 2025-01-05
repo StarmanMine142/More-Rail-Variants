@@ -11,8 +11,8 @@ import static de.pnku.mstv_mrailv.init.MrailvBlockInit.more_rail_blocks;
 
 public class MoreRailVariantLootTableGenerator extends FabricBlockLootTableProvider {
 
-    public MoreRailVariantLootTableGenerator(FabricDataOutput dataOutput, CompletableFuture<HolderLookup.Provider> registryLookup) {
-        super(dataOutput, registryLookup);
+    public MoreRailVariantLootTableGenerator(FabricDataOutput dataOutput) {
+        super(dataOutput);
     }
 
     @Override

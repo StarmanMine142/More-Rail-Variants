@@ -1,0 +1,34 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "quad-mstv-mtv"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "activator_rail",
+  "key": {
+    "#": {
+      "item": "quad-mstv-mtv:bamboo_redstone_torch"
+    },
+    "S": {
+      "item": "minecraft:bamboo"
+    },
+    "X": {
+      "tag": "c:ingots/iron"
+    }
+  },
+  "pattern": [
+    "XSX",
+    "X#X",
+    "XSX"
+  ],
+  "result": {
+    "count": 6,
+    "item": "quad-mstv-mrailv:bamboo_activator_rail"
+  },
+  "show_notification": true
+}
