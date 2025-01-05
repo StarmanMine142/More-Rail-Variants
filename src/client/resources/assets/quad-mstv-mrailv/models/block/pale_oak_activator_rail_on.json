@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/rail_flat",
+  "textures": {
+    "rail": "quad-mstv-mrailv:block/pale_oak_activator_rail_on"
+  }
+}

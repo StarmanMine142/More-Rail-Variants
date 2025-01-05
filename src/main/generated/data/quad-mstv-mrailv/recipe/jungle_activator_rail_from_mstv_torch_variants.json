@@ -11,15 +11,9 @@
   "category": "misc",
   "group": "activator_rail",
   "key": {
-    "#": {
-      "item": "quad-mstv-mtv:jungle_redstone_torch"
-    },
-    "S": {
-      "item": "mstv-base:jungle_stick"
-    },
-    "X": {
-      "tag": "c:ingots/iron"
-    }
+    "#": "quad-mstv-mtv:jungle_redstone_torch",
+    "S": "mstv-base:jungle_stick",
+    "X": "#c:ingots/iron"
   },
   "pattern": [
     "XSX",

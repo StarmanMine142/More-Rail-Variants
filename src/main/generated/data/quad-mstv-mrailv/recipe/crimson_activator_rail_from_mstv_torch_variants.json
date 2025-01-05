@@ -11,15 +11,9 @@
   "category": "misc",
   "group": "activator_rail",
   "key": {
-    "#": {
-      "item": "quad-mstv-mtv:crimson_redstone_torch"
-    },
-    "S": {
-      "item": "mstv-base:crimson_stick"
-    },
-    "X": {
-      "tag": "c:ingots/iron"
-    }
+    "#": "quad-mstv-mtv:crimson_redstone_torch",
+    "S": "mstv-base:crimson_stick",
+    "X": "#c:ingots/iron"
   },
   "pattern": [
     "XSX",

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_rail_raised_sw",
+  "textures": {
+    "rail": "quad-mstv-mrailv:block/pale_oak_rail"
+  }
+}

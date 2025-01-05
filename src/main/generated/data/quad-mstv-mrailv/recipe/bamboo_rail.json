@@ -4,7 +4,7 @@
   "group": "rail",
   "key": {
     "S": "minecraft:bamboo",
-    "X": "minecraft:bamboo"
+    "X": "#c:ingots/iron"
   },
   "pattern": [
     "X X",

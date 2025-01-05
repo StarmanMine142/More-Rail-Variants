@@ -3,15 +3,9 @@
   "category": "misc",
   "group": "powered_rail",
   "key": {
-    "R": {
-      "item": "minecraft:redstone"
-    },
-    "S": {
-      "item": "mstv-base:birch_stick"
-    },
-    "X": {
-      "tag": "c:ingots/gold"
-    }
+    "R": "minecraft:redstone",
+    "S": "mstv-base:birch_stick",
+    "X": "#c:ingots/gold"
   },
   "pattern": [
     "X X",

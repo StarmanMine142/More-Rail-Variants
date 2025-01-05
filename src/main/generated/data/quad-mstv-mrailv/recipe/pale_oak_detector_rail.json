@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "detector_rail",
+  "key": {
+    "#": "minecraft:stone_pressure_plate",
+    "R": "minecraft:redstone",
+    "S": "mstv-base:pale_oak_stick",
+    "X": "#c:ingots/iron"
+  },
+  "pattern": [
+    "XSX",
+    "X#X",
+    "XRX"
+  ],
+  "result": {
+    "count": 6,
+    "id": "quad-mstv-mrailv:pale_oak_detector_rail"
+  }
+}

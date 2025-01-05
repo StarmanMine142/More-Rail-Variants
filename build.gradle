@@ -52,12 +52,13 @@ dependencies {
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fapi_version}"
 
-	// MStV + mTorchV
+	// MStV + mTorchV (temp local for 1.1.2 datagen list, to be replaced when 1.1.2 is live)
 	modDatagenImplementation "curse.maven:more-stick-variants-1096913:${project.mstv_version_id}"
-	modDatagenImplementation "curse.maven:more-torch-variants-1099365:${project.mtorchv_version_id}"
+	//modDatagenImplementation "curse.maven:more-torch-variants-1099365:${project.mtorchv_version_id}"
+	modImplementation files("res/MoreTorchVariants-1.1.2+1.21.4-Fabric.jar")
 
 	modImplementation "curse.maven:more-stick-variants-1096913:${project.mstv_version_id}"
-	modImplementation "curse.maven:more-torch-variants-1099365:${project.mtorchv_version_id}"
+	//modImplementation "curse.maven:more-torch-variants-1099365:${project.mtorchv_version_id}"
 }
 
 processResources {

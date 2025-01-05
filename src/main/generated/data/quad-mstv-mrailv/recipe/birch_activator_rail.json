@@ -14,15 +14,9 @@
   "category": "misc",
   "group": "activator_rail",
   "key": {
-    "#": {
-      "tag": "quad-mstv-mrailv:rail_redstone_torches"
-    },
-    "S": {
-      "item": "mstv-base:birch_stick"
-    },
-    "X": {
-      "tag": "c:ingots/iron"
-    }
+    "#": "#quad-mstv-mrailv:rail_redstone_torches",
+    "S": "mstv-base:birch_stick",
+    "X": "#c:ingots/iron"
   },
   "pattern": [
     "XSX",

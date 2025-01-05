@@ -11,15 +11,9 @@
   "category": "misc",
   "group": "activator_rail",
   "key": {
-    "#": {
-      "item": "quad-mstv-mtv:bamboo_redstone_torch"
-    },
-    "S": {
-      "item": "minecraft:bamboo"
-    },
-    "X": {
-      "tag": "c:ingots/iron"
-    }
+    "#": "quad-mstv-mtv:bamboo_redstone_torch",
+    "S": "minecraft:bamboo",
+    "X": "#c:ingots/iron"
   },
   "pattern": [
     "XSX",

@@ -4,7 +4,7 @@
   "group": "rail",
   "key": {
     "S": "mstv-base:birch_stick",
-    "X": "mstv-base:birch_stick"
+    "X": "#c:ingots/iron"
   },
   "pattern": [
     "X X",

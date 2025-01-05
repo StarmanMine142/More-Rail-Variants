@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "quad-mstv-mrailv:block/pale_oak_activator_rail"
+  }
+}

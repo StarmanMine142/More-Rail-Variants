@@ -4,7 +4,7 @@
   "group": "rail",
   "key": {
     "S": "mstv-base:warped_stick",
-    "X": "mstv-base:warped_stick"
+    "X": "#c:ingots/iron"
   },
   "pattern": [
     "X X",

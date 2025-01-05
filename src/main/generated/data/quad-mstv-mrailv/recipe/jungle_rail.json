@@ -4,7 +4,7 @@
   "group": "rail",
   "key": {
     "S": "mstv-base:jungle_stick",
-    "X": "mstv-base:jungle_stick"
+    "X": "#c:ingots/iron"
   },
   "pattern": [
     "X X",
