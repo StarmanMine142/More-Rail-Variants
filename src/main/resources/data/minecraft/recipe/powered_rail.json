@@ -1,25 +1,25 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "group": "activator_rail",
+  "group": "powered_rail",
   "key": {
     "#": {
-      "item": "minecraft:redstone_torch"
-    },
-    "S": {
       "item": "minecraft:stick"
     },
+    "R": {
+      "item": "minecraft:redstone"
+    },
     "X": {
-      "tag": "c:ingots/iron"
+      "tag": "c:ingots/gold"
     }
   },
   "pattern": [
-    "XSX",
+    "X X",
     "X#X",
-    "XSX"
+    "XRX"
   ],
   "result": {
     "count": 6,
-    "id": "minecraft:activator_rail"
+    "id": "minecraft:powered_rail"
   }
 }
