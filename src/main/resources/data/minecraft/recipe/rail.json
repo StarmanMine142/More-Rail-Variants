@@ -3,12 +3,8 @@
   "category": "misc",
   "group": "rail",
   "key": {
-    "#": {
-      "item": "minecraft:stick"
-    },
-    "X": {
-      "tag": "c:ingots/iron"
-    }
+    "#": "minecraft:stick",
+    "X": "#c:ingots/iron"
   },
   "pattern": [
     "X X",

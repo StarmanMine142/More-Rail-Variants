@@ -3,15 +3,9 @@
   "category": "misc",
   "group": "activator_rail",
   "key": {
-    "#": {
-      "item": "minecraft:redstone_torch"
-    },
-    "S": {
-      "item": "minecraft:stick"
-    },
-    "X": {
-      "tag": "c:ingots/iron"
-    }
+    "#": "minecraft:redstone_torch",
+    "S": "minecraft:stick",
+    "X": "#c:ingots/iron"
   },
   "pattern": [
     "XSX",
