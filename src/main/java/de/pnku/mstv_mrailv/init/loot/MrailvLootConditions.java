@@ -7,7 +7,7 @@ import net.minecraft.world.level.storage.loot.predicates.LootItemConditionType;
 
 public class MrailvLootConditions {
 
-    public static final LootItemConditionType IS_MOD_LOADED = new LootItemConditionType(IsModLoadedPredicate.CODEC);
+    public static final LootItemConditionType IS_MOD_LOADED = new LootItemConditionType(new IsModLoadedPredicate.Serializer());
 
     public static void registerMrailvLootConditions() {
         Registry.register(BuiltInRegistries.LOOT_CONDITION_TYPE, MoreRailVariants.asId("is_mod_loaded"), IS_MOD_LOADED);
