@@ -301,8 +301,8 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 64.0,
-                "min": 63.0
+                "max": 16.0,
+                "min": 1.0
               },
               "function": "minecraft:set_count"
             }
@@ -392,6 +392,29 @@
           "weight": 5
         },
         {
+          "type": "minecraft:tag",
+          "expand": false,
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 16.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "quad-mstv-mrailv:dark_oak_torch",
+          "weight": 15,
+          "conditions": [
+            {
+              "condition": "quad-mstv-mrailv:is_mod_loaded",
+              "mod_id": "quad-mstv-mtv"
+            }
+          ]
+        },
+        {
           "type": "minecraft:item",
           "functions": [
             {
@@ -404,9 +427,19 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "quad-mstv-mtv:dark_oak_torch",
-          "weight": 15
+          "name": "minecraft:torch",
+          "weight": 15,
+          "conditions": [
+            {
+              "condition": "minecraft:inverted" ,
+              "term": {
+                "condition": "quad-mstv-mrailv:is_mod_loaded" ,
+                "mod_id": "quad-mstv-mtv"
+              }
+            }
+          ]
         }
+
       ],
       "rolls": 3,
       "conditions": [
