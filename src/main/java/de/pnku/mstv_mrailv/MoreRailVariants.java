@@ -1,6 +1,7 @@
 package de.pnku.mstv_mrailv;
 
 import de.pnku.mstv_mrailv.init.MrailvBlockInit;
+import de.pnku.mstv_mrailv.init.loot.MrailvLootConditions;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.resources.ResourceLocation;
@@ -17,6 +18,7 @@ public class MoreRailVariants implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		MrailvBlockInit.registerRail();
+		MrailvLootConditions.registerMrailvLootConditions();
 	}
 
 	public static ResourceLocation asId(String path) {
