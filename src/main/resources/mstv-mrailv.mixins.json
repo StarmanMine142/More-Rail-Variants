@@ -4,7 +4,9 @@
   "package": "de.pnku.mstv_mrailv.mixin" ,
   "compatibilityLevel": "JAVA_21" ,
   "mixins": [
-    "AbstractMinecartMixin"
+    "AbstractMinecartMixin" ,
+    "NewMinecartBehaviorMixin" ,
+    "OldMinecartBehaviorMixin"
   ] ,
   "injectors": {
     "defaultRequire": 1
